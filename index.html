@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">My Portfolio</h1>
+        
+        <div class="profile-card">
+            <img id="profile-pic" src="assets/default.jpg" alt="Profile Picture">
+            <label for="imageUpload" class="upload-btn">Upload Profile Picture</label>
+            <input type="file" id="imageUpload" accept="image/*">
+
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="date" id="dob">
+            <input type="text" id="designation" placeholder="Your Designation">
+            <input type="tel" id="contact" placeholder="Your Contact Details">
+
+            <button onclick="saveProfile()">Save Profile</button>
+        </div>
+
+        <div id="profile-display" class="hidden">
+            <h2>Profile Details</h2>
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>DOB:</strong> <span id="display-dob"></span></p>
+            <p><strong>Designation:</strong> <span id="display-designation"></span></p>
+            <p><strong>Contact:</strong> <span id="display-contact"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
